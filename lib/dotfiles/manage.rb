@@ -1,11 +1,14 @@
+# frozen_string_literal: true
+
+# Dotfiles
 module Dotfiles
-  def self.fib(n)
-    if n <= 0
-      return 0
-    elsif n == 1
-      return 1
+  def self.fib(num)
+    if num <= 0
+      0
+    elsif num == 1
+      1
     else
-      return fib(n - 1) + fib(n - 2)
+      fib(num - 1) + fib(num - 2)
     end
   end
 end

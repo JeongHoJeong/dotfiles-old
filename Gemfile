@@ -1,5 +1,10 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
-gem 'rspec'
-gem 'rubocop', require: false
+
+group :development do
+  gem 'rcodetools'
+  gem 'rspec'
+  gem 'rubocop'
+  gem 'solargraph'
+end
